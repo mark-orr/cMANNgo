@@ -1,12 +1,16 @@
 rm(list=ls())
+
+#SET RELATIVE TO WHERE THIS R FILE IS LOCATED
+setwd('../')
+wd <- "./"
 #PROTOTYPE ANALYSIS AND FEATURE EXTRACTION
-prototypes <- read.table("../prototypes_0.txt")
+prototypes <- read.table("./prototypes_0.txt")
 uber.proto <- prototypes[1,2:length(prototypes[1,])]
 no.features <- length(uber.proto)
 no.agents <- length(prototypes[,1])-1
 
 #HISTORY DATA ANALYSIS
-d.0 <- read.table("../history_0.txt",skip=2)
+d.0 <- read.table("./history_0.txt",skip=2)
 #REMOVE t0
 outputs <- d.0[(no.agents+1):length(d.0[,1]),
                (4+no.features+1):(4+no.features+1+no.features-1)]

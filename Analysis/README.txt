@@ -9,5 +9,7 @@
 /a1000f40t100000r10simple uses a substitute for the load example so don't for data
 /a1000f40t100000r4StartLensOnEachRun also was used to test the memory leak
 
+2/7/18
+Update on last entry, we're now using Git for versioning the analysis and will shortly do the same for the sim codebase.
 
 #EOF
